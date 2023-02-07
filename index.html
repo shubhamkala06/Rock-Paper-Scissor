@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="JavaScript/RPS.js"></script>
+    <script src="JavaScript/JS.js" defer></script>
+    <link rel="stylesheet" href="CSS/Style.css">
 
 </head>
 <body>
     
-    <h1>Rock-Paper-Scissor</h1>
+    <h1 class="heading">Rock-Paper-Scissor</h1>
+    <div class="instructions">Select:-</div>
+    <div class="selectionBox">
+        <div data-choice="0" class="tile">
+            Rock
+        </div>
+        <div data-choice="1" class="tile">
+            Paper
+        </div>
+        <div data-choice="2" class="tile">
+            Scissor
+        </div>
+    </div>
+    <div class="round"></div>
+    <div class="score">
+        <div class="userTile">
+            <div class="user">You</div>
+            <div class="userScore"></div>
+        </div>
+        <div class="compTile">
+            <div class="comp">Computer</div>
+            <div class="compScore"></div>
+        </div>
+    </div>
+    <div class="result"></div>
     
+    <div class="restart">Restart</div>
 </body>
 </html>

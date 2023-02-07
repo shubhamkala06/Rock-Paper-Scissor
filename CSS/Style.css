@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+
+.heading{
+    margin-top: 0px;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    
+}
+.instructions{
+    margin-top: 5%;
+    font-size: 40px;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.round{
+    font-size: 25px;
+    text-align: center;
+    min-height: 30px;
+    margin-top: 1%;
+}
+
+.selectionBox{
+    display: flex;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: space-around;
+    padding: 2%;
+    gap: 5%;
+}
+
+.tile{
+    display: flex;
+    min-height: 150px;
+    justify-content: center;/*Discovered some new shit - justify content and align items can also be applied to the textContent of the element*/
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid white;
+    flex: 1 0 0;
+    border-radius: .5rem;
+}
+
+.tile:hover{
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    transform: scale(1.05);
+    border-color: #ffc600;
+    box-shadow: 0 0 0.5rem #ffc600;
+}
+
+.score{
+    margin-top: 1%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    justify-content: center;
+    
+}
+
+.userTile, .compTile{
+    padding-top: 2%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    flex: 1 0 0;
+    border-radius: .5rem;
+}
+
+.user, .comp{
+    font-size: 30px;
+}
+.userScore, .compScore{
+    margin-top: 4%;
+    font-size: 30px;
+}
+
+.result{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.restart{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 10%;
+    font-size: 20px;
+    border-radius: .5rem;
+}
+.restart:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem white;
+}
